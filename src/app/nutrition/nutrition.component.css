@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  .meal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 2px solid rgb(238, 236, 236);
+  
+  }
+
+  .meal img {
+    max-width: 400px;
+    height:400px
+     ;
+     margin: 10px 20px;
+  }
+
+  .meal .text {
+    flex: 1;
+    padding: 0 20px;
+  }
+.text{
+  background-color: rgb(202, 240, 202);
+  border-radius: 10px;
+  margin: 0px 10px;
+ 
+}
+h2, p{
+  padding: 20px;
+}
+p{
+  font-size: 18px;
+  font-weight: 400;
+  
+}

@@ -1,0 +1,13 @@
+
+   figure{
+    display: inline;
+   }
+
+   .caption span{
+     margin: 10px 150px;
+   }
+   img{
+    margin: 10px 20px;
+    border-radius: 7px;
+   }
+   

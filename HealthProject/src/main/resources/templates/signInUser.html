@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/signIn.css">
+    <title>sign in</title>
+</head>
+<body>
+    <div class="box">
+        <form action="/index" method="post">
+             <img src="../static/icons/user.png" alt="UserIcon" id="userIcon">
+            <br>
+            <h2 class="userLogin">User Login</h2>
+            <br>
+            <i id="iconUser"></i>
+            <input type="email" name="uemail" class="inpt N" id="email" placeholder="Email-id" required>
+            <br>
+            <br>
+            <i id="iconPass"></i>
+            <input type="password" name="upassword" class="inpt N" placeholder="Password" required>
+            <br>
+            <br>
+            <input type="submit" value="Login Now" class="inpt" id="submit">
+            <br>
+            <br>
+             <input type="checkbox"><span id="rem">Remember me</span>
+           
+            <a href="/forgotPassword" id="forgot">forgot password</a>
+            <br>
+            <br>
+            <p id="accNew">Don't have account yet?</p>
+            <br>
+            <input type="submit" class="inpt" value="Create account" id="createBtn">
+
+
+           
+        </form>
+    </div>
+</body>
+</html>

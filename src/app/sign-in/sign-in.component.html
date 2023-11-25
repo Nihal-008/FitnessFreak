@@ -1,0 +1,33 @@
+
+<div class="box">
+    <form action="/index" method="post">
+         <img src="assets/icons/user.png" alt="UserIcon" id="userIcon">
+        <br>
+        <h2 class="userLogin">User Login</h2>
+        <br>
+        <i id="iconUser"></i>
+        <input type="email" name="uemail" class="inpt N" id="email" placeholder="Email-id" required>
+        <br>
+        <br>
+        <i id="iconPass"></i>
+        <input type="password" name="upassword" class="inpt N" placeholder="Password" required>
+        <br>
+        <br>
+        <input type="submit" value="Login Now" class="inpt" id="submit">
+        <br>
+        <br>
+         <input type="checkbox"><span id="rem">Remember me</span>
+       
+        <a routerLink="forgotPass" id="forgot">forgot password</a>
+        <br>
+        <br>
+        <p id="accNew">Don't have account yet?</p>
+        <br>
+        
+        <a routerLink="signUp" class="inpt"  id="createBtn">Create account</a>
+
+
+       
+    </form>
+</div>
+<router-outlet></router-outlet>

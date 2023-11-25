@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="box">
+        <form action="/signInUser" method="post">
+          <h2>Create Your Account</h2>              
+          <br>
+          <label for="name" class="label">Enter your full name</label>
+          <br>
+      
+          <input type="text" name="uname" id="name" class="name inpt" required>
+          <br>
+          <br>
+          <label for="email" class="label">Enter your E-mail id</label>
+          
+          <br>
+          <input type="email" name="uemail" id="email" class="inpt" required>
+          
+          <br>
+           <br>
+          <label for="mob">Enter your mobile number</label>
+          <br>
+          <input type="tel" name="umob" id="mob" class="mob inpt" required>
+      
+         
+          
+          <br>
+          <br>
+          <label for="password">Set password</label>
+          <br>
+          <input type="password" name="upassword" class="inpt" id="password" required>
+          <br>
+          <br>
+          <label for="confirmpass">Confirm your password</label>
+          <br>
+          <input type="password" class="inpt" name="uconfirmpass" id="confirmpass" required>
+          <br>
+          <br>
+          
+            <input type="submit" value="Submit" id="submit" class="inpt">
+        </form>
+      </div>
+</body>
+</html>

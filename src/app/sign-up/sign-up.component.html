@@ -1,0 +1,47 @@
+
+<div class="box">
+    <form (ngSubmit)="submitForm()" #userForm="ngForm" novalidate>
+      <h2>Create Your Account</h2>              
+      <br>
+      <label for="name" class="label">Enter your full name</label>
+      <br>
+  
+      <input type="text" name="uname" id="name" class="name inpt"  [(ngModel)]="user.uname" required  #name="ngModel">
+      <br>
+      <br>
+  
+      <label for="email" class="label">Enter your E-mail id</label>
+      
+      <br>
+      <input type="email" name="uemail" id="email" class="inpt" [(ngModel)]="user.uemail" required ngModel>
+      
+      <br>
+       <br>
+      <label for="mob">Enter your mobile number</label>
+      <br>
+      <input type="tel" name="umob" id="mob" class="mob inpt" pattern="[0-9]{10}" [(ngModel)]="user.umob" required>
+      <div class="warning-message" *ngIf="userForm.controls['umob'].hasError('pattern') && userForm.controls['umob'].touched">
+        Contact must be a 10-digit number.
+      </div>
+      <br>
+      <br>
+      <label for="password">Set password</label>
+      <br>
+      <input type="password" name="upassword" class="inpt" id="password" [(ngModel)]="user.upassword" required>
+      <br>
+      <br>
+      <label for="confirmpass">Confirm your password</label>
+      <br>
+      <input type="password" class="inpt" name="uconfirmpass" id="confirmpass" [(ngModel)]="user.uconfirmpass" required>
+      <br>
+      <br>
+      
+      <div *ngIf="submitted && userForm.invalid" class="warning-message">
+        Please fill out all required fields before submitting.
+    </div>
+    <div *ngIf="userForm.hasError('passwordMismatch')" class="warning-message">
+      Password and Confirm Password should match.
+    </div>
+        <input type="submit" value="Submit" id="submit" class="inpt" >
+    </form>
+  </div>

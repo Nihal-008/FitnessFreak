@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif ;
+    box-sizing: border-box;
+
+}
+h2{
+    color: blue;
+    text-align: center;
+    color: white;
+}
+.box{
+    width: 500px;
+    padding: 50px;
+    margin: 40px auto;
+    border: 2px solid black;
+    background-image: url(https://www.southdownsleisure.co.uk/wp-content/uploads/2019/10/Gym-background.jpg);
+    background-size: cover;
+    border-radius: 40px 0px 40px 0px;
+    color: white;
+    
+}
+.inpt{
+    width: 100%;
+    padding:5px;
+    margin: 5px;
+    border-radius: 5px;
+  
+}
+
+
+#submit{
+    width: 100%;
+    padding:7px;
+    background-color: rgb(6, 107, 6);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid green;
+ 
+}
+/* label{
+    color: white;
+} */
+#submit:hover{
+    color:black;
+    background-color: rgb(92, 158, 223);
+    border:1px solid rgb(92, 158, 223);;
+}
+
+.warning-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
